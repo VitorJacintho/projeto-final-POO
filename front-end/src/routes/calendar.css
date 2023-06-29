@@ -1,0 +1,91 @@
+.calendar-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.calendar-header {
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.weekday {
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: #fff;
+}
+
+.calendar-day {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #ccc;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.note-marker {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.note-section {
+  margin-top: 20px;
+}
+
+.note-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.note-input {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
